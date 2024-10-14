@@ -23,7 +23,24 @@
             padding: 20px;
             text-align: center;
             transition: background-color 0.5s ease;
-        }
+        }.image-container {
+    border: 5px solid #0000ff; /* Bright blue border */
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+img {
+    border-radius: 10px;
+    width: 300px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+}
 
         .profile-header img {
             border-radius: 50%;
@@ -200,8 +217,11 @@
 <body>
     <header>
         <div class="profile-header">
-            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Your Name</h1>
+            
+          <div class="image-container">
+        <img src="IMG-20241009-WA0003.jpg" alt="GitHub Profile Photo">
+    </div>
+            <h1>ntokozo ntombela</h1>
             <p>Information and Communication Technology Student | C# | ASP.NET | Python | Django | CSS | HTML</p>
         </div>
         <button id="toggle-dark-mode">Toggle Dark Mode</button>
